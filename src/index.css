@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Design tokens — change these to re-theme the whole app. */
+@theme {
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-serif: 'IBM Plex Serif', Georgia, serif;
+
+  --color-ground: #f4f5f2;
+  --color-surface: #ffffff;
+  --color-subtle: #f8f9f7;
+  --color-ink: #16201d;
+  --color-muted: #55625d;
+  --color-line: #dde2de;
+  --color-line-strong: #c9d1cc;
+  --color-track: #e3e8e4;
+
+  --color-brand: #0e6b58;
+  --color-brand-dark: #0a5244;
+  --color-brand-soft: #e3f0ec;
+
+  --color-warn: #7a4508;
+  --color-warn-strong: #c27a1a;
+  --color-warn-soft: #fbefdd;
+
+  --color-info: #1a4f8c;
+  --color-info-soft: #e6eef8;
+
+  --color-high: #8e2a17;
+  --color-high-soft: #fbe3dd;
+
+  --color-record: #c2412d;
+  --color-record-ring: #f6d7cf;
+
+  --color-redact: #26332f;
+}
+
+@keyframes acorn-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+
+@layer utilities {
+  .animate-slide { animation: acorn-slide 1.3s ease-in-out infinite; }
+}
+
+html, body, #root { min-height: 100%; }
+body { margin: 0; background: var(--color-ground); color: var(--color-ink); font-family: var(--font-sans); }
