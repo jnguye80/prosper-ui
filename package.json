@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "ACoRN (Conversational Needs Assessment) UI prototype — field recorder and web app. Synthetic sample data only.",
+  "description": "ACoRN (Conversational Needs Assessment) web app prototype. Synthetic sample data only.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
